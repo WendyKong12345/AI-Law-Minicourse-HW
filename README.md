@@ -1,0 +1,1 @@
+# AI-Law-Minicourse-HW
