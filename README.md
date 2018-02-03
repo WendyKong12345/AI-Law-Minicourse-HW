@@ -7,8 +7,9 @@ This step reads the url addresses from the pickle file from Step 1.  It then ret
 ### Step 3 Data Processing
 This step cleans up the case description retrieved from Step 2. It removes state names, case names, common stopwords, people's names, dat of the week, etc. The codes saves the outcome into a full project lemmatized pickle file.
 ### Step 4 Topic Modeling Methods
-
+This step uses processed data from step 3 to compare different models and different configurations of topic modeling. It choses NMF model at the end.
 ### Step 5 Topic Model Application
+This step uses the NMF model to process all of the Supreme Court cases from step 3 and generate a list of topics such as criminal activity, civil rights, free speech, etc.  Then the code uses the model to predict the topic(s) of each case and creates a graph to show the distribution of topics over time. 
 
 ## Word2Vec Using TensorFlow
 Step 1 downloads a zip file from a website and unzips the file. It then separates the strings into words separated by a space.
