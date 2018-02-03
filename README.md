@@ -7,6 +7,10 @@ This step reads the url addresses from the pickle file from Step 1.  It then ret
 ### Step 3 Data Processing
 This step cleans up the case description retrieved from Step 2. It removes state names, case names, common stopwords, people's names, dat of the week, etc. The codes saves the outcome into a full project lemmatized pickle file.
 ### Step 4 Topic Modeling Methods
+
 ### Step 5 Topic Model Application
 
 ## Word2Vec Using TensorFlow
+Step 1 downloads a zip file from a website and unzips the file. It then separates the strings into words separated by a space.
+
+Step 2 ranks the words based on how frequenty they appear and choose the top 50,000 words.  It then builds a vocabulary with these 50,000 words. The code then assigns a unique number to each word 
