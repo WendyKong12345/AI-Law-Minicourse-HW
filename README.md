@@ -13,4 +13,13 @@ This step cleans up the case description retrieved from Step 2. It removes state
 ## Word2Vec Using TensorFlow
 Step 1 downloads a zip file from a website and unzips the file. It then separates the strings into words separated by a space.
 
-Step 2 ranks the words based on how frequenty they appear and choose the top 50,000 words.  It then builds a vocabulary with these 50,000 words. The code then assigns a unique number to each word 
+Step 2 ranks the words based on how frequenty they appear and choose the top 50,000 words.  It then builds a vocabulary with these 50,000 words. The code then assigns a unique number to each word and generates a mapping and a reverse mapping between each unique number and the corresponding word.
+
+Step 3 calculates how to break the training data set into batches.
+
+Step 4 defines a loss function to calculate the skip-gram model's accuracy. The code uses some of the data as validation to calculate loss. It defines some parameters (e.g., the number of dimensions of the model) for the training of the model.
+
+Step 5 defines how many steps in which the model will be trained. Based on the batches calculation from Step 3, the code feed the batches into the mode and calculates the loss for each step. The code can then monitors the accuracy of the model.
+
+Step 6 plots the outcome into a graph that shows the relatedness of the 50,000 words.
+
